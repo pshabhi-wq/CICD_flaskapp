@@ -102,7 +102,7 @@ jobs:
           to: ${{ secrets.NOTIFICATION_EMAIL }}
           from: ${{ secrets.MAIL_USERNAME }}
           body: |
-            Pipeline Execution Failed!
+            Pipeline Execution Failed!!
             
             - Commit SHA: ${{ github.sha }}
             - Branch: ${{ github.ref_name }}
