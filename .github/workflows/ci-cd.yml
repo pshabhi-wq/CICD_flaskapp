@@ -80,7 +80,7 @@ jobs:
           to: ${{ secrets.NOTIFICATION_EMAIL }}
           from: ${{ secrets.MAIL_USERNAME }}
           body: |
-            Pipeline Run Succeeded!
+            Pipeline Run Succeeded!!
             
             - Commit SHA: ${{ github.sha }}
             - Branch: ${{ github.ref_name }}
