@@ -26,10 +26,8 @@ A **Flask** web application to manage student records backed by **MongoDB**, dep
 ---
 
 ---
-
-```bash
 ## Folder Structure
-
+```bash
 CICD_flaskapp/
 ├── .github/
 │   └── workflows/
