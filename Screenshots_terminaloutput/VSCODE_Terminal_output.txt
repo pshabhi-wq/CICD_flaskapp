@@ -1,0 +1,268 @@
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "Add Dockerfile, health route, and CI/CD workflow"
+[main 9e53407] Add Dockerfile, health route, and CI/CD workflow
+On branch main
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .github/workflows/securegate-summary.yaml
+        deleted:    .github/workflows/securegate.yml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .dockerignore
+        .gtihub/
+        Dockerfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS H:\pipeline\CICD_flaskapp> git add .\.dockerignore
+PS H:\pipeline\CICD_flaskapp> git add .\.github\workflows\ci-cd.yml
+fatal: pathspec '.\.github\workflows\ci-cd.yml' did not match any files
+PS H:\pipeline\CICD_flaskapp> ls             
+
+
+    Directory: H:\pipeline\CICD_flaskapp
+
+Mode                 LastWriteTime         Length Name                                                                                 
+----                 -------------         ------ ----                                                                                 
+d-----         8/16/2026  12:38 PM                .gtihub                                                                              
+d-----         8/15/2026   5:38 PM                templates                                                                            
+-a----         8/15/2026   5:42 PM             42 .dockerignore                                                                        
+-a----         8/15/2026   5:38 PM           4895 .gitignore                                                                           
+-a----         8/15/2026   5:40 PM           2374 app.py                                                                               
+-a----         8/15/2026   5:38 PM            563 azure-pipelines.yml                                                                  
+-a----         8/15/2026   5:41 PM            170 Dockerfile                                                                           
+-a----         8/15/2026   5:38 PM           1087 LICENSE                                                                              
+-a----         8/15/2026   5:38 PM           2766 README.md                                                                            
+-a----         8/15/2026   5:38 PM         154216 README.pdf                                                                           
+-a----         8/15/2026   5:38 PM             86 requirements.txt                                                                     
+-a----         8/15/2026   5:38 PM            602 start_flask.sh                                                                       
+-a----         8/15/2026   5:38 PM           2102 test_app.py                                                                          
+
+
+PS H:\pipeline\CICD_flaskapp> ls
+
+
+    Directory: H:\pipeline\CICD_flaskapp
+----                 -------------         ------ ----                                                                                 
+d-----         8/16/2026  12:38 PM                .github                                                                              
+d-----         8/15/2026   5:38 PM                templates                                                                            
+-a----         8/15/2026   5:42 PM             42 .dockerignore                                                                        
+-a----         8/15/2026   5:38 PM           4895 .gitignore                                                                           
+-a----         8/15/2026   5:38 PM            563 azure-pipelines.yml                                                                  
+-a----         8/15/2026   5:41 PM            170 Dockerfile                                                                           
+-a----         8/15/2026   5:38 PM           1087 LICENSE                                                                              
+-a----         8/15/2026   5:38 PM           2766 README.md                                                                            
+-a----         8/15/2026   5:38 PM         154216 README.pdf                                                                           
+-a----         8/15/2026   5:38 PM             86 requirements.txt                                                                     
+-a----         8/15/2026   5:38 PM            602 start_flask.sh                                                                       
+-a----         8/15/2026   5:38 PM           2102 test_app.py                                                                          
+
+PS H:\pipeline\CICD_flaskapp> git add .\.github\workflows\ci-cd.yml
+[main 70936c7] Add Dockerfile, health route, and CI/CD workflow
+ 3 files changed, 129 insertions(+)
+ create mode 100644 .dockerignore
+ create mode 100644 .github/workflows/ci-cd.yml
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 2.48 KiB | 845.00 KiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+Everything up-to-date
+PS H:\pipeline\CICD_flaskapp> git add .
+[main 18688db] changes
+ 2 files changed, 490 deletions(-)
+ delete mode 100644 .github/workflows/securegate-summary.yaml
+ delete mode 100644 .github/workflows/securegate.yml
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   70936c7..18688db  main -> main
+PS H:\pipeline\CICD_flaskapp> git add .\.github\workflows\ci-cd.yml
+PS H:\pipeline\CICD_flaskapp> git commit -m "latest changes"
+[main b4203b5] latest changes
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "fix mongo uri"
+[main 2cceee6] fix mongo uri
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   b4203b5..2cceee6  main -> main
+PS H:\pipeline\CICD_flaskapp> git commit -m "updated yaml file"
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+   2cceee6..744ad8e  main -> main
+PS H:\pipeline\CICD_flaskapp> git commit -m "monguriupdate"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Everything up-to-date
+PS H:\pipeline\CICD_flaskapp> git add .
+Your branch is up to date with 'origin/main'.
+
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "mongouriupdate"
+[main 19afd4b] mongouriupdate
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+PS H:\pipeline\CICD_flaskapp> git add . 
+PS H:\pipeline\CICD_flaskapp> git commit -m "mongodbchanges"
+[main 3cbc363] mongodbchanges
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "awschanges"
+[main cec3089] awschanges
+ 1 file changed, 1 insertion(+)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "awsupdate"
+[main 90e9bf2] awsupdate
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "healthupdate"
+[main bca84e0] healthupdate
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "Test failure path"
+[main 1f0773c] Test failure path
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   bca84e0..1f0773c  main -> main
+PS H:\pipeline\CICD_flaskapp> git commit -m "Checkforsuccess"
+[main 06fff2a] Checkforsuccess
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   1f0773c..06fff2a  main -> main
+PS H:\pipeline\CICD_flaskapp> git add .
+[main c73c15d] Adding env file
+ 1 file changed, 33 insertions(+)
+ create mode 100644 .github/.env.example
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 950 bytes | 950.00 KiB/s, done.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   06fff2a..c73c15d  main -> main
+PS H:\pipeline\CICD_flaskapp> git commit -m "updated env file"
+[main 38242ea] updated env file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename .github/.env.example => .env.example (100%)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   c73c15d..38242ea  main -> main
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "TestSuccess"
+[main f93329f] TestSuccess
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   38242ea..f93329f  main -> main
+PS H:\pipeline\CICD_flaskapp> git commit -m "Check for success"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .env.example
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS H:\pipeline\CICD_flaskapp> git add .
+PS H:\pipeline\CICD_flaskapp> git commit -m "Check for success"
+[main 682bf31] Check for success
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS H:\pipeline\CICD_flaskapp> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pshabhi-wq/CICD_flaskapp
+   f93329f..682bf31  main -> main
