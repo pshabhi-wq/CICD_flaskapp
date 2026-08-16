@@ -62,4 +62,13 @@ def delete_student(student_id):
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True, port=5000)
 
+@app.route('/health')
+def health():
+    try:
+        # Ping MongoDB to verify connection
+        mongo.db.command('ping')
+        return {"status": "healthy", "database": "connected"}, 200
+    except Exception as e:
+        return {"status": "unhealthy", "error": str(e)}, 500
+
 
