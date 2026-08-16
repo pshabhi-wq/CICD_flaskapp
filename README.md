@@ -27,6 +27,7 @@ A **Flask** web application to manage student records backed by **MongoDB**, dep
 
 ---
 
+```bash
 ## Folder Structure
 
 CICD_flaskapp/
@@ -59,7 +60,7 @@ CICD_flaskapp/
 ├── .dockerignore                              # Files excluded from Docker image build
 ├── .env.example                               # Template for environment variables
 └── README.md                                  # Project documentation
-
+```
 ---
 
 ## Setup Instructions for flaskapp
