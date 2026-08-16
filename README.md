@@ -20,7 +20,7 @@ A **Flask** web application to manage student records backed by **MongoDB**, dep
 * **Database:** MongoDB (MongoDB Atlas)
 * **Testing:** Pytest, Mongomock
 * **Containerization:** Docker, Amazon ECR
-* **CI/CD & Cloud:** GitHub Actions, AWS EC2 (Ubuntu)
+* **CI/CD & Cloud:** GitHub Actions, AWS EC2 
 * **Notifications:** SMTP / Gmail Action
 
 ---
@@ -153,7 +153,7 @@ Navigate to **GitHub Repository > Settings > Secrets and variables > Actions** a
 | \`AWS_REGION\` | AWS Region code | \`us-east-1\` |
 | \`ECR_REPOSITORY\` | Amazon ECR Repository Name | \`flaskapp\` |
 | \`EC2_HOST\` | Public IP or DNS of the EC2 Instance | \`54.210.xx.xx\` |
-| \`EC2_USERNAME\` | SSH username for the EC2 Instance | \`ubuntu\` |
+| \`EC2_USERNAME\` | SSH username for the EC2 Instance | \`ec2-user\` |
 | \`EC2_SSH_KEY\` | Private SSH key (\`.pem\`) contents | \`-----BEGIN OPENSSH PRIVATE KEY-----...\` |
 | \`MAIL_USERNAME\` | Sender Gmail address | \`your_email@gmail.com\` |
 | \`MAIL_PASSWORD\` | Gmail App Password (16-char without spaces) | \`abcdefghijklmnop\` |
@@ -192,7 +192,7 @@ docker tag flaskapp:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/flas
 docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/flaskapp:latest
 
 # 4. SSH into EC2 Instance
-ssh -i /path/to/key.pem ubuntu@<EC2_PUBLIC_IP>
+ssh -i /path/to/key.pem ec2-user@<EC2_PUBLIC_IP>
 
 # 5. Execute Deployment Commands on EC2
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
